@@ -1,3 +1,22 @@
-.header__modal {
+.bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal {
+display: flex;
+}
+
+.modalHidden {
     display: none;
+}
+.modalVisible {
+    display: block;
+}
+.mobilePanel {
+    display: flex;
+    flex-direction: row;
 }
