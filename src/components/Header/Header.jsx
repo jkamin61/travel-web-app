@@ -1,6 +1,10 @@
 import css from './Header.module.css'
 import {clsx} from 'clsx';
 import {useState} from "react";
+import {Button, Link} from "@mui/material";
+import MenuIcon from '@mui/icons-material/Menu';
+import HomeIcon from '@mui/icons-material/Home';
+import Breadcrumbs from '@mui/material/Breadcrumbs';
 
 export const Header = () => {
     const [modal, setModal] = useState(false);
@@ -12,28 +16,35 @@ export const Header = () => {
         <header className={css.bar}>
 
             <div>
-                <h2>travel-app</h2>
+                <h2>JourneyHive</h2>
             </div>
             <div className={css.mobilePanel}>
-                <div>
-                    <button>Log in</button>
-                    <button>Register</button>
+                <div className={css.authButtons}>
+                    <Button variant="contained">Log in</Button>
+                    <Button variant="contained">Register</Button>
                 </div>
                 <div>
-                    <button onClick={handleModalWindow}>|||</button>
+                    <MenuIcon fontSize={"large"} cursor={"pointer"} onClick={handleModalWindow}></MenuIcon>
                 </div>
             </div>
             <div className={clsx(modal ? css.modalVisible : css.modalHidden)}>
-                <nav>
-                    <ul>
-                        <li>Home</li>
-                        <li>Discover</li>
-                        <li>Services</li>
-                        <li>News</li>
-                        <li>About us</li>
-                        <li>Contact</li>
-                    </ul>
-                </nav>
+                <Breadcrumbs>
+                    <Link underline="hover" color="inherit" href="#">
+                        <HomeIcon></HomeIcon>Home
+                    </Link>
+                    <Link underline="hover" color="inherit" href="#">
+                        Discover
+                    </Link>
+                    <Link underline="hover" color="inherit" href="#">
+                        Services
+                    </Link>
+                    <Link underline="hover" color="inherit" href="#">
+                        About us
+                    </Link>
+                    <Link underline="hover" color="inherit" href="#">
+                        Contact
+                    </Link>
+                </Breadcrumbs>
                 <button onClick={handleModalWindow}>
                     X
                 </button>

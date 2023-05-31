@@ -4,18 +4,25 @@ import {Travelers} from "../components/Travelers/Travelers";
 import {Destination} from "../components/Destination/Destination";
 import {Testimonial} from "../components/Testimonial/Testimonial";
 import {Footer} from "../components/Footer/Footer";
+import {Container} from "@mui/material";
 
 const Home = () => {
     return (
         <>
-            <Header></Header>
+            <Container>
+                <Header></Header>
+            </Container>
             <main>
-                <Explore></Explore>
-                <Travelers></Travelers>
-                <Destination></Destination>
-                <Testimonial></Testimonial>
+                <Container>
+                    <Explore></Explore>
+                    <Travelers></Travelers>
+                    <Destination></Destination>
+                    <Testimonial></Testimonial>
+                </Container>
             </main>
-            <Footer></Footer>
+            <Container>
+                <Footer></Footer>
+            </Container>
         </>
     )
 }

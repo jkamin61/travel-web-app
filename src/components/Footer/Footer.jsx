@@ -1,4 +1,8 @@
 import css from './Footer.module.css'
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 export const Footer = () => {
     return (
@@ -46,23 +50,20 @@ export const Footer = () => {
                 </div>
             </div>
             <div className={css.lowerFooter}>
-                <div>
+                <div className={css.footerSocialMedia}>
                     <h3>Social Medias</h3>
                     <ul>
                         <li>
-                            <svg>1</svg>
+                            <InstagramIcon></InstagramIcon>
                         </li>
                         <li>
-                            <svg>2</svg>
+                            <FacebookIcon></FacebookIcon>
                         </li>
                         <li>
-                            <svg>3</svg>
+                            <TwitterIcon></TwitterIcon>
                         </li>
                         <li>
-                            <svg>4</svg>
-                        </li>
-                        <li>
-                            <svg>5</svg>
+                            <GitHubIcon></GitHubIcon>
                         </li>
                     </ul>
                 </div>
