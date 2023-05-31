@@ -9,10 +9,12 @@ const Home = () => {
     return (
         <>
             <Header></Header>
-            <Explore></Explore>
-            <Travelers></Travelers>
-            <Destination></Destination>
-            <Testimonial></Testimonial>
+            <main>
+                <Explore></Explore>
+                <Travelers></Travelers>
+                <Destination></Destination>
+                <Testimonial></Testimonial>
+            </main>
             <Footer></Footer>
         </>
     )

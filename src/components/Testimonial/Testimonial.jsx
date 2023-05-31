@@ -9,32 +9,32 @@ export const Testimonial = () => {
                 <li>
                     <img alt={"avatar"}/>
                     <p>Name</p>
-                    <p>opinion</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
                 </li>
                 <li>
                     <img alt={"avatar"}/>
                     <p>Name</p>
-                    <p>opinion</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
                 </li>
                 <li>
                     <img alt={"avatar"}/>
                     <p>Name</p>
-                    <p>opinion</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
                 </li>
                 <li>
                     <img alt={"avatar"}/>
                     <p>Name</p>
-                    <p>opinion</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
                 </li>
                 <li>
                     <img alt={"avatar"}/>
                     <p>Name</p>
-                    <p>opinion</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
                 </li>
                 <li>
                     <img alt={"avatar"}/>
                     <p>Name</p>
-                    <p>opinion</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
                 </li>
             </ul>
         </section>

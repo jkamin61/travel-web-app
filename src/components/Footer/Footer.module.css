@@ -1,3 +1,12 @@
 .bar {
 
 }
+.upperFooter {
+    display: flex;
+    flex-direction: row;
+}
+
+.lowerFooter {
+    display: flex;
+    flex-direction: row;
+}
