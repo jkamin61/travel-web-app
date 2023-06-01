@@ -1,11 +1,26 @@
-.section {
+.explore {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px 0;
+    margin: 0;
     padding: 0 10px;
     text-align: center;
+    background-image: url("/src/images/pietro-de-grandi_small.jpg");
+    background-size: cover;
+    height: 427px;
+    position: relative;
+}
+
+.explore::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
 }
 
 .form {
@@ -13,4 +28,10 @@
     flex-direction: column;
     width: 70%;
     gap: 10px;
+    position: relative;
+}
+
+.mainText h2, p {
+    color: white;
+    position: relative;
 }

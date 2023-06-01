@@ -9,18 +9,40 @@ import {Container} from "@mui/material";
 const Home = () => {
     return (
         <>
-            <Container>
+            <Container sx={{
+                paddingLeft: 0,
+                paddingRight: 0,
+                '@media (min-width: 600px)': {
+                    paddingLeft: 0,
+                    paddingRight: 0,
+                },
+            }}
+            >
                 <Header></Header>
             </Container>
             <main>
-                <Container>
+                <Container sx={{
+                    paddingLeft: 0,
+                    paddingRight: 0,
+                    '@media (min-width: 600px)': {
+                        paddingLeft: 0,
+                        paddingRight: 0,
+                    },
+                }}>
                     <Explore></Explore>
                     <Travelers></Travelers>
                     <Destination></Destination>
                     <Testimonial></Testimonial>
                 </Container>
             </main>
-            <Container>
+            <Container sx={{
+                paddingLeft: 0,
+                paddingRight: 0,
+                '@media (min-width: 600px)': {
+                    paddingLeft: 0,
+                    paddingRight: 0,
+                },
+            }}>
                 <Footer></Footer>
             </Container>
         </>
