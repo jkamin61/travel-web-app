@@ -1,5 +1,5 @@
 .travelers {
-display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -8,10 +8,102 @@ display: flex;
 .boxes {
     display: flex;
     flex-wrap: wrap-reverse;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 }
 
 .boxes > li {
     flex-basis: calc((100% - 20px) / 2);
     text-align: center;
     list-style-type: none;
+}
+
+.box {
+    background-color: #43B97F;
+    border: 1px solid #3D3E48;
+    border-radius: 6px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainHeading {
+    color: #295943;
+}
+
+.additionalHeading {
+    color: #3D3E48;
+}
+
+.abouts {
+    color: #3D3E48;
+}
+
+.statistics {
+    color: white;
+}
+
+.statisticsText {
+    color: white;
+}
+
+.pointDescription {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.images {
+    display: block;
+    margin-left: 40px;
+}
+
+.leftImage {
+    width: 140px;
+    height: auto;
+}
+
+
+.middleImage {
+    width: 95px;
+    height: auto;
+    position: relative;
+    right: 5px;
+}
+
+.rightImage {
+    width: 80px;
+    height: auto;
+    position: relative;
+    bottom: 65px;
+    right: 37px;
+}
+
+@media only screen and (min-width: 480px) {
+    .leftImage {
+        width: 170px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .middleImage {
+        width: 130px;
+        height: auto;
+        position: relative;
+        top: 10px;
+        right: 8px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .rightImage {
+        width: 120px;
+        height: auto;
+        position: relative;
+        bottom: 75px;
+        right: 55px;
+    }
 }
