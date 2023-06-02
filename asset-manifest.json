@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/travel-web-app/static/css/main.af6ca55b.css",
-    "main.js": "/travel-web-app/static/js/main.dd10ddb7.js",
+    "main.css": "/travel-web-app/static/css/main.6793af26.css",
+    "main.js": "/travel-web-app/static/js/main.444e5d0d.js",
     "static/media/pietro-de-grandi_small.jpg": "/travel-web-app/static/media/pietro-de-grandi_small.15d6337cc366fe1c8851.jpg",
     "index.html": "/travel-web-app/index.html",
-    "main.af6ca55b.css.map": "/travel-web-app/static/css/main.af6ca55b.css.map",
-    "main.dd10ddb7.js.map": "/travel-web-app/static/js/main.dd10ddb7.js.map"
+    "main.6793af26.css.map": "/travel-web-app/static/css/main.6793af26.css.map",
+    "main.444e5d0d.js.map": "/travel-web-app/static/js/main.444e5d0d.js.map"
   },
   "entrypoints": [
-    "static/css/main.af6ca55b.css",
-    "static/js/main.dd10ddb7.js"
+    "static/css/main.6793af26.css",
+    "static/js/main.444e5d0d.js"
   ]
 }
