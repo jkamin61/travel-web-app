@@ -10,11 +10,10 @@ export const Header = () => {
     }
     const handleAuthButtonsAnimation = (event) => {
         const authButton = event.target;
-        if (authButton.classList.contains(`${css.authButtonClicked}`)) {
-            authButton.classList.remove(`${css.authButtonClicked}`)
-        } else {
+        authButton.classList.contains(`${css.authButtonClicked}`) ?
+            authButton.classList.remove(`${css.authButtonClicked}`) :
             authButton.classList.add(`${css.authButtonClicked}`)
-        }
+
     }
     return (
         <header className={css.bar}>

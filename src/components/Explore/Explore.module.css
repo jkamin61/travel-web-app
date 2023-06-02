@@ -10,6 +10,7 @@
     background-size: cover;
     height: 427px;
     position: relative;
+    gap: 20px;
 }
 
 .explore::before {
@@ -26,12 +27,48 @@
 .form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 70%;
     gap: 10px;
     position: relative;
+    background-color: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 30px;
 }
+
 
 .mainText h2, p {
     color: white;
     position: relative;
+}
+
+.exploreSubmitButton {
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+    border: none;
+    background-color: #43B97F;
+    border-radius: 10px;
+    height: 40px;
+    width: 240px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.exploreSubmitButton:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0 18px 36px -18px inset;
+}
+
+.exploreButtonClicked {
+    transition: transform 0.2s ease;
+    transform: scale(0.9);
+}
+
+.exploreInputs {
+    border: none;
+    border-bottom: 1px solid gray;
+    height: 40px;
+    border-radius: 1px;
+    width: 100%;
 }

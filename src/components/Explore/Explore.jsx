@@ -1,7 +1,16 @@
 import css from './Explore.module.css';
 
 export const Explore = () => {
+    const handleExploreButtonAnimation = (event) => {
+        const exploreButton = event.target;
+        exploreButton.classList.contains(`${css.exploreButtonClicked}`) ?
+            exploreButton.classList.remove(`${css.exploreButtonClicked}`) :
+            exploreButton.classList.add(`${css.exploreButtonClicked}`)
 
+    }
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
+    }
     return (
         <section className={css.explore}>
             <div className={css.mainText}>
@@ -13,10 +22,10 @@ export const Explore = () => {
                 </p>
             </div>
             <form className={css.form}>
-                    <input></input>
-                    <input></input>
-                    <input></input>
-                    <button type={"submit"}>FIND TRIP NOW</button>
+                    <input type={"search"}  className={css.exploreInputs}></input>
+                    <input type={"date"} className={css.exploreInputs}></input>
+                    <input type={"search"} className={css.exploreInputs}></input>
+                    <button type={"submit"} className={css.exploreSubmitButton} onClick={handleFormSubmit} onMouseDown={handleExploreButtonAnimation} onMouseUp={handleExploreButtonAnimation}>FIND TRIP NOW</button>
             </form>
         </section>
     )
