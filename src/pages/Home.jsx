@@ -4,47 +4,20 @@ import {Travelers} from "../components/Travelers/Travelers";
 import {Destination} from "../components/Destination/Destination";
 import {Testimonial} from "../components/Testimonial/Testimonial";
 import {Footer} from "../components/Footer/Footer";
-import {Container} from "@mui/material";
 
 const Home = () => {
     return (
         <>
-            <Container sx={{
-                paddingLeft: 0,
-                paddingRight: 0,
-                '@media (min-width: 600px)': {
-                    paddingLeft: 0,
-                    paddingRight: 0,
-                },
-            }}
-            >
+            <div className={"container"}>
                 <Header></Header>
-            </Container>
-            <main>
-                <Container sx={{
-                    paddingLeft: 0,
-                    paddingRight: 0,
-                    '@media (min-width: 600px)': {
-                        paddingLeft: 0,
-                        paddingRight: 0,
-                    },
-                }}>
+                <main>
                     <Explore></Explore>
                     <Travelers></Travelers>
                     <Destination></Destination>
                     <Testimonial></Testimonial>
-                </Container>
-            </main>
-            <Container sx={{
-                paddingLeft: 0,
-                paddingRight: 0,
-                '@media (min-width: 600px)': {
-                    paddingLeft: 0,
-                    paddingRight: 0,
-                },
-            }}>
+                </main>
                 <Footer></Footer>
-            </Container>
+            </div>
         </>
     )
 }

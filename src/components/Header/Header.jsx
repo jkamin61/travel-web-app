@@ -1,53 +1,50 @@
 import css from './Header.module.css'
 import {clsx} from 'clsx';
 import {useState} from "react";
-import {Button, Link} from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
-import HomeIcon from '@mui/icons-material/Home';
-import Breadcrumbs from '@mui/material/Breadcrumbs';
 
 export const Header = () => {
     const [modal, setModal] = useState(false);
-
     const handleModalWindow = () => {
         modal === false ? setModal(true) : setModal(false);
     }
+    const handleAuthButtonsAnimation = (event) => {
+        const authButton = event.target;
+        if (authButton.classList.contains(`${css.authButtonClicked}`)) {
+            authButton.classList.remove(`${css.authButtonClicked}`)
+        } else {
+            authButton.classList.add(`${css.authButtonClicked}`)
+        }
+    }
     return (
         <header className={css.bar}>
-
             <div>
                 <h2>JourneyHive</h2>
             </div>
             <div className={css.mobilePanel}>
                 <div className={css.authButtons}>
-                    <Button variant="contained">Log in</Button>
-                    <Button variant="contained">Register</Button>
+                    <button className={css.authLoginButton} onMouseDown={handleAuthButtonsAnimation}
+                            onMouseUp={handleAuthButtonsAnimation}>Log in
+                    </button>
+                    <button className={css.authRegisterButton} onMouseDown={handleAuthButtonsAnimation}
+                            onMouseUp={handleAuthButtonsAnimation}>Register
+                    </button>
                 </div>
                 <div>
                     <MenuIcon fontSize={"large"} cursor={"pointer"} onClick={handleModalWindow}></MenuIcon>
                 </div>
             </div>
             <div className={clsx(modal ? css.modalVisible : css.modalHidden)}>
-                <Breadcrumbs>
-                    <Link underline="hover" color="inherit" href="#">
-                        <HomeIcon></HomeIcon>Home
-                    </Link>
-                    <Link underline="hover" color="inherit" href="#">
-                        Discover
-                    </Link>
-                    <Link underline="hover" color="inherit" href="#">
-                        Services
-                    </Link>
-                    <Link underline="hover" color="inherit" href="#">
-                        About us
-                    </Link>
-                    <Link underline="hover" color="inherit" href="#">
-                        Contact
-                    </Link>
-                </Breadcrumbs>
                 <button onClick={handleModalWindow}>
-                    X
+                    ->
                 </button>
+                <ul>
+                    <li>Home</li>
+                    <li>Discover</li>
+                    <li>Services</li>
+                    <li>About us</li>
+                    <li>Contact</li>
+                </ul>
             </div>
         </header>
     )

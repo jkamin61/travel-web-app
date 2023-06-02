@@ -3,7 +3,6 @@ import css from './Travelers.module.css'
 export const Travelers = () => {
     return (
         <section className={css.travelers}>
-
             <div>
                 <h3>Travelers Point</h3>
                 <h2>We help to find your dream place</h2>
