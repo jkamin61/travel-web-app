@@ -1,6 +1,7 @@
 import css from './Testimonial.module.css';
 import {avatars} from "./avatars";
 import {nanoid} from 'nanoid';
+
 export const Testimonial = () => {
     return (
         <section className={css.testimonial}>
@@ -10,8 +11,10 @@ export const Testimonial = () => {
                 avatars.map(element => {
                     return (
                         <li key={nanoid()} className={css.commentItem}>
+                            <div className={css.userAbouts}>
                             <img src={element.avatar} alt={'avatar'} className={css.avatar}/>
                             <h3 className={css.usersName}>{element.name}</h3>
+                            </div>
                             <p className={css.comment}>{element.comment}</p>
                         </li>
                     )
