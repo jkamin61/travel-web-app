@@ -1,7 +1,7 @@
 import css from "./Destination.module.css"
 import {destinationGalleryItems} from "./destinationGalleryItems";
 import React, {useRef} from 'react';
-
+import {nanoid} from 'nanoid';
 export const Destination = () => {
     const photoContainerRef = useRef(null);
     let currentIndex = 0;
@@ -36,9 +36,7 @@ export const Destination = () => {
                 <div ref={photoContainerRef} className={css.photoContainer}>
                     {destinationGalleryItems.map(element => {
                         return (
-                            <>
-                                <img src={element.image} alt={element.description}/>
-                            </>
+                                <img key={nanoid()} src={element.image} alt={element.description}/>
                         )
                     })}
                 </div>
