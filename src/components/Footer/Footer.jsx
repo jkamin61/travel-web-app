@@ -9,9 +9,9 @@ export const Footer = () => {
         <footer className={css.bar}>
             <div className={css.upperFooter}>
                 <div>
-                    <h3>Links</h3>
-                    <ul>
-                        <li>
+                    <h3 className={css.linksHeading}>Links</h3>
+                    <ul className={css.linksList}>
+                        <li className={css.link}>
                             <a href={"/"}>Discover</a>
                         </li>
                         <li>
@@ -29,8 +29,8 @@ export const Footer = () => {
                     </ul>
                 </div>
                 <div>
-                    <h3>Services</h3>
-                    <ul>
+                    <h3 className={css.servicesHeading}>Services</h3>
+                    <ul className={css.servicesList}>
                         <li>
                             <a href={"/"}>About us</a>
                         </li>
@@ -50,26 +50,9 @@ export const Footer = () => {
                 </div>
             </div>
             <div className={css.lowerFooter}>
-                <div className={css.footerSocialMedia}>
-                    <h3>Social Medias</h3>
-                    <ul>
-                        <li>
-                            <InstagramIcon></InstagramIcon>
-                        </li>
-                        <li>
-                            <FacebookIcon></FacebookIcon>
-                        </li>
-                        <li>
-                            <TwitterIcon></TwitterIcon>
-                        </li>
-                        <li>
-                            <GitHubIcon></GitHubIcon>
-                        </li>
-                    </ul>
-                </div>
                 <div>
-                    <h3>Contact</h3>
-                    <ul>
+                    <h3 className={css.contactHeading}>Contact</h3>
+                    <ul className={css.contactList}>
                         <li>
                             <a href={"/"}>Address: Jl.Codelaras No.205A</a>
                         </li>
@@ -84,6 +67,23 @@ export const Footer = () => {
                         </li>
                         <li>
                             <a href={"/"}>Maps: Kediri, East java</a>
+                        </li>
+                    </ul>
+                </div>
+                <div className={css.footerSocialMedia}>
+                    <h3 className={css.socialMediaHeading}>Social Medias</h3>
+                    <ul>
+                        <li>
+                            <InstagramIcon className={css.socialIcons}></InstagramIcon>
+                        </li>
+                        <li>
+                            <FacebookIcon className={css.socialIcons}></FacebookIcon>
+                        </li>
+                        <li>
+                            <TwitterIcon className={css.socialIcons}></TwitterIcon>
+                        </li>
+                        <li>
+                            <GitHubIcon className={css.socialIcons}></GitHubIcon>
                         </li>
                     </ul>
                 </div>
