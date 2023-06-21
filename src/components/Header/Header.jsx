@@ -2,6 +2,7 @@ import css from './Header.module.css'
 import {clsx} from 'clsx';
 import {useState} from "react";
 import MenuIcon from '@mui/icons-material/Menu';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 export const Header = () => {
     const [modal, setModal] = useState(false);
@@ -34,10 +35,10 @@ export const Header = () => {
                 </div>
             </div>
             <div className={clsx(modal ? css.modalVisible : css.modalHidden)}>
-                <button onClick={handleModalWindow}>
-                    ->
+                <button onClick={handleModalWindow} className={css.modalButton}>
+                    <ArrowForwardIosIcon></ArrowForwardIosIcon>
                 </button>
-                <ul>
+                <ul className={css.modalNaviList}>
                     <li>Home</li>
                     <li>Discover</li>
                     <li>Services</li>
