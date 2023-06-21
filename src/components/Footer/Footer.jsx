@@ -74,16 +74,16 @@ export const Footer = () => {
                     <h3 className={css.socialMediaHeading}>Social Medias</h3>
                     <ul>
                         <li>
-                            <InstagramIcon className={css.socialIcons}></InstagramIcon>
+                            <a href={"/"}><InstagramIcon fontSize="large" className={css.socialIcons}></InstagramIcon></a>
                         </li>
                         <li>
-                            <FacebookIcon className={css.socialIcons}></FacebookIcon>
+                            <a href={"/"}><FacebookIcon fontSize="large" className={css.socialIcons}></FacebookIcon></a>
                         </li>
                         <li>
-                            <TwitterIcon className={css.socialIcons}></TwitterIcon>
+                            <a href={"/"}> <TwitterIcon fontSize="large" className={css.socialIcons}></TwitterIcon></a>
                         </li>
                         <li>
-                            <GitHubIcon className={css.socialIcons}></GitHubIcon>
+                            <a href={"/"}> <GitHubIcon fontSize="large" className={css.socialIcons}></GitHubIcon></a>
                         </li>
                     </ul>
                 </div>
