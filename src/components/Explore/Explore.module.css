@@ -44,6 +44,12 @@
 }
 
 .exploreSubmitButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
     border: none;
     background-color: #43B97F;
@@ -71,4 +77,32 @@
     height: 40px;
     border-radius: 1px;
     width: 100%;
+}
+
+.exploreHeading {
+    padding-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .explore {
+        background-image: url("/src/images/pietro-de-grandi_medium.jpg");
+    }
+
+    .form {
+        flex-direction: row;
+    }
+
+    .exploreInputs {
+        width: 20%;
+    }
+
+    .exploreSubmitButton {
+        width: auto;
+        overflow: hidden;
+        white-space: nowrap;
+
+    }
+    .mainText {
+        margin: 0 10px;
+    }
 }
